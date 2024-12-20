@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="https://static.vecteezy.com/system/resources/previews/019/606/995/original/audio-icon-graphic-clipart-design-free-png.png" type="image/x-icon">
+    <link rel="shortcut icon"
+        href="https://static.vecteezy.com/system/resources/previews/019/606/995/original/audio-icon-graphic-clipart-design-free-png.png"
+        type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music player</title>
 </head>
+
 <body>
     <div class="wrapper">
 
         <div class="title">
             <h1>Music Player</h1>
             <i class="fa-solid fa-record-vinyl" style="font-size: 50px;"></i>
-           </div>
-           
+        </div>
+
         <div class="container">
-          <img  id="img" src="https://i.pinimg.com/736x/49/7d/dc/497ddc320dce70e913794a8b1c636e9d.jpg" alt=""> 
-            <p id="music name">Travis Scott - Sicko mode</p>
-            <div id="time-bar"></div>
-           
-           <div id="number"> 
-            <h2>
-                0:00
-            </h2>
-            <h2>
-                2:38
-            </h2>
-           </div>
-
-            
+            <img id="img" src="" alt="">
+            <p id="music-name"></p>
+            <div id="time-bar" ></div>
+            <div id="number">
+                <h2>
+                    0:00
+                </h2>
+                <h2 id="final-Time">
+                    2:38
+                </h2>
+            </div>
 
 
-            
+
+
+
             <div class="controls">
-                <button id="previus"><i class="fa-solid fa-backward" style="font-size: 30px;"></i></button>
-                <button onclick="playSong()"><i id="play" class="fa-solid fa-play" style="font-size: 30px;"></i></button>
-                <button id="next"><i class="fa-solid fa-forward" style="font-size: 30px;"></i></button>
+                <button onclick="previusMusic()" id="previus"><i class="fa-solid fa-backward"
+                        style="font-size: 30px;"></i></button>
+                <button onclick="playSong()"><i id="play" class="fa-solid fa-play"
+                        style="font-size: 30px;"></i></button>
+                <button onclick="nextMusic()" id="next"><i class="fa-solid fa-forward"
+                        style="font-size: 30px;"></i></button>
             </div>
 
             <summary></summary>
@@ -49,4 +55,5 @@
 
     <script src="scirp.js"></script>
 </body>
+
 </html>
