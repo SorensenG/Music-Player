@@ -3,8 +3,8 @@ const playButon = document.getElementById('play');
 const finalTime = document.getElementById('final-Time');
 const musicName = document.getElementById('music-name');
 const timeBar = document.getElementById('time-bar');
-const progress = document.createElement('div');
-timeBar.appendChild(progress);
+const progressBar = document.getElementById('progress')
+
 
 let i = 0;
 let curretnSong = 0;
@@ -26,7 +26,7 @@ const musics = [{
 },
 ]
 
-
+progressBar.style.width = '10%';
 
 
 function updateMusic() {
