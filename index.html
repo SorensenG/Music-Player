@@ -23,11 +23,11 @@
         <div class="container">
             <img id="img" src="" alt="">
             <p id="music-name"></p>
-            <div id="time-bar" >
+            <div id="time-bar" onclick="changeTime()">
                 <div id="progress"></div>
             </div>
             <div id="number">
-                <h2>
+                <h2 id="initial-Time">
                     0:00
                 </h2>
                 <h2 id="final-Time">
@@ -40,11 +40,11 @@
 
 
             <div class="controls">
-                <button onclick="previusMusic()" id="previus"><i class="fa-solid fa-backward"
+                <button onclick="previusMusic()"  id="previus"><i class="fa-solid fa-backward"
                         style="font-size: 30px;"></i></button>
                 <button onclick="playSong()"><i id="play" class="fa-solid fa-play"
                         style="font-size: 30px;"></i></button>
-                <button onclick="nextMusic()" id="next"><i class="fa-solid fa-forward"
+                <button onclick="nextMusic()"  id="next"><i class="fa-solid fa-forward"
                         style="font-size: 30px;"></i></button>
             </div>
 
